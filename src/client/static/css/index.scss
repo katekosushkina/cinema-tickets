@@ -1,0 +1,133 @@
+body {
+  width: 100%;
+  font-family: Old Standard TT, sans-serif;
+
+  .w-80 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:active {
+      font-weight: bold;
+    }
+  }
+
+  header {
+    #logo {
+      max-height: 100px;
+    }
+
+    h2 {
+      font: bold 30px Old Standard TT, sans-serif;
+    }
+
+    input.form-control {
+      min-width: 140px;
+    }
+
+    .carousel-inner {
+      max-height: 300px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  nav {
+    #nav-tab {
+      a.nav-item {
+        width: 144px;
+        text-align: center;
+      }
+    }
+  }
+
+  .search-bar {
+
+    .dropdown-absolute {
+      position: absolute;
+      z-index: 9999999;
+      margin-top: 5px;
+      background-color: white;
+      border-radius: abs(3%);
+      box-shadow: 1px 1px 5px lightgray;
+
+      a.dropdown-absolute-item {
+        display: block;
+        margin-top: 5px;
+        border-bottom: 1px solid lightgray;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+
+    #nav-films {
+      @media (max-width: 576px) {
+        .card-title {
+          height: auto;
+        }
+      }
+    }
+  }
+  .card .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  #registr {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #login { 
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .btn-color {
+    color: #fff;
+    background-color: rgb(60, 112, 130);
+    border-color: rgb(60, 112, 130);
+  }
+
+  .btn-color:active,
+  .btn-color:hover {
+    background-color: rgb(44, 83, 97);
+    border-color: rgb(44, 83, 97);
+  }
+
+  footer {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+
+    .fab {
+      font-size: 30px;
+    }
+
+    .partners img {
+      height: 50px;
+    }
+  }
+
+  a .card-image:hover {
+    filter: brightness(0.8);
+  }
+
+  a.text-dark:hover {
+    text-decoration: underline;
+  }
+}
